@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shape test work</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=9">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-title" content="Pixi App">
+    <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui"/>
+
+    <!--styles-->
+    <link rel="stylesheet" type="text/css" href="res/css/main.css">
+    <link rel="stylesheet" type="text/css" href="res/css/bootstrap.min.css">
+
+    <!--lib-->
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/pixi.min.js"></script>
+
+    <script src="./src/config.js"></script>
+    <script src="src/randomShape.js"></script>
+    <script src="./src/spawn.model.js"></script>
+    <script src="./src/spawn.view.js"></script>
+    <script src="./src/spawn.controller.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-3">
+            <h4>Number of current shapes <span class="label label-success" id="shapeCount"></span></h4>
+        </div>
+        <div class="col-lg-3">
+            <h4>Surface area occupied by shapes <span class="label label-success" id="area"></span></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="game-body" id="canvas">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-3">
+            <h4>Gravity value</h4>
+        </div>
+        <div class="col-lg-3">
+            <h4>Number of shapes per sek</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-lg-offset-3">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary" id="gravityMin"><span
+                        class="glyphicon glyphicon-minus"></span></button>
+                <button type="button" class="btn btn-primary" id="gravityMax"><span
+                        class="glyphicon glyphicon-plus"></span></button>
+            </div>
+        </div>
+        <div class="col-lg-1">
+            <h4><span class="label label-success"  id="gravity"></span></h4>
+        </div>
+        <div class="col-lg-1">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary" id="shapeSpeedMin"><span
+                        class="glyphicon glyphicon-minus"></span></button>
+                <button type="button" class="btn btn-primary" id="shapeSpeedMax"><span
+                        class="glyphicon glyphicon-plus"></span></button>
+            </div>
+        </div>
+        <div class="col-lg-1">
+            <h4><span class="label label-success"  id="shapeSpeed"></span></h4>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

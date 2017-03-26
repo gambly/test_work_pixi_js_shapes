@@ -1,0 +1,17 @@
+{
+  "name": "pixi_js_test_work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "pixi.js": "^4.4.2"
+  },
+  "devDependencies": {
+    "pixi.js": "^4.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
